@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AgentFlow | AI agents and automation for operations teams</title><meta name="description" content="AgentFlow designs, builds and runs AI agents and automation for operations teams.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css"></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="wrap">
+<a class="logo" href="index.html"><svg viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="7" fill="#2457C5"/><circle cx="8" cy="9" r="2.6" fill="#fff"/><circle cx="20" cy="14" r="2.6" fill="#fff"/><circle cx="8" cy="19" r="2.6" fill="#fff"/><path d="M8 9C14 9 14 14 20 14M8 19C14 19 14 14 20 14" stroke="#fff" stroke-width="1.7" fill="none"/></svg>AgentFlow</a>
+<nav class="main" aria-label="Main"><a href="index.html#work">Case studies</a><a href="index.html#capabilities">Capabilities</a><a href="features.html">Features</a><a href="contact.html">Contact</a></nav>
+<a class="btn" href="contact.html">Start a project</a></div></header>
+
+<main id="main">
+<div class="hero"><div class="wrap">
+ <div><h1>Autonomous agents for the work your team repeats every day</h1>
+ <p class="lead">AgentFlow designs, builds and runs AI agents that handle tickets, claims, invoices, dispatch and contract review, with people approving the decisions that matter.</p>
+ <div class="actions"><a class="btn" href="#work">View case studies</a><a class="btn ghost" href="features.html">Estimate your savings</a></div></div>
+ <div class="panel">
+  <svg class="flow" viewBox="0 0 440 250" role="img" aria-label="Animated diagram of a task passing through agents to a human approval step">
+   <defs><path id="p" d="M40 50 C140 50 120 120 220 120 S320 190 400 190"/></defs>
+   <use href="#p" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="2" stroke-dasharray="5 7"/>
+   <g fill="#E8EDF7"><circle cx="40" cy="50" r="13"/><circle cx="130" cy="88" r="13"/><circle cx="220" cy="120" r="13"/><circle cx="310" cy="163" r="13" fill="#7EA2F5"/><circle cx="400" cy="190" r="13"/></g>
+   <text x="18" y="82">Inbox</text><text x="96" y="124">Triage</text><text x="178" y="156">Research</text><text x="258" y="202">Human approval</text><text x="366" y="226">Done</text>
+   <circle r="7" fill="#7EA2F5"><animateMotion dur="5s" repeatCount="indefinite"><mpath href="#p"/></animateMotion></circle>
+   <circle r="5" fill="#7EA2F5" opacity=".6"><animateMotion dur="5s" begin="1.7s" repeatCount="indefinite"><mpath href="#p"/></animateMotion></circle>
+   <circle r="4" fill="#7EA2F5" opacity=".4"><animateMotion dur="5s" begin="3.4s" repeatCount="indefinite"><mpath href="#p"/></animateMotion></circle>
+  </svg>
+  <div class="log" id="log"></div>
+ </div>
+</div></div>
+<div class="sectors"><div class="wrap"><strong>Agents in production for</strong><span>Customer support</span><span>Logistics</span><span>Finance operations</span><span>Healthcare administration</span><span>Legal review</span></div></div>
+
+<section id="work"><div class="wrap">
+ <div class="sh"><h2>Case studies</h2><p>Six teams, six different back offices. Open one to see the problem, how the agents work, and what changed.</p></div>
+ <div class="filters" id="filters" role="group" aria-label="Filter case studies"><button aria-pressed="true" data-f="All">All</button><button aria-pressed="false" data-f="Finance">Finance</button><button aria-pressed="false" data-f="Healthcare">Healthcare</button><button aria-pressed="false" data-f="Legal">Legal</button><button aria-pressed="false" data-f="Logistics">Logistics</button><button aria-pressed="false" data-f="Retail">Retail</button></div>
+ <div class="grid" id="grid"><a class="card" href="case-studies/northwind-freight.html" data-s="Logistics"><div class="art" data-art data-seed="1" data-bg="#173B7A" data-fg="#E6ECFA" data-ac="#7EA2F5" data-w="480" data-h="300"></div>
+<div class="txt"><span class="sector">Logistics</span><h3>Dispatch that re-plans itself</h3><div class="res"><span>Northwind Freight</span><strong>41% fewer late deliveries</strong></div></div></a><a class="card" href="case-studies/halcyon-health.html" data-s="Healthcare"><div class="art" data-art data-seed="2" data-bg="#0E5D63" data-fg="#E3F4F4" data-ac="#7DD3C8" data-w="480" data-h="300"></div>
+<div class="txt"><span class="sector">Healthcare</span><h3>Prior authorisations in hours, not days</h3><div class="res"><span>Halcyon Health</span><strong>4 days to 6 hours</strong></div></div></a><a class="card" href="case-studies/lumen-bank.html" data-s="Finance"><div class="art" data-art data-seed="3" data-bg="#2B3750" data-fg="#E8ECF3" data-ac="#A5B4FC" data-w="480" data-h="300"></div>
+<div class="txt"><span class="sector">Finance</span><h3>Business onboarding without the queue</h3><div class="res"><span>Lumen Bank</span><strong>12 min average KYC check</strong></div></div></a><a class="card" href="case-studies/brightcart.html" data-s="Retail"><div class="art" data-art data-seed="4" data-bg="#242C3A" data-fg="#F3F4F6" data-ac="#D6A85C" data-w="480" data-h="300"></div>
+<div class="txt"><span class="sector">Retail</span><h3>Customer support that resolves, not deflects</h3><div class="res"><span>Brightcart</span><strong>68% resolved by agents</strong></div></div></a><a class="card" href="case-studies/terrazzo-energy.html" data-s="Finance"><div class="art" data-art data-seed="5" data-bg="#1F5A4A" data-fg="#E7F3EE" data-ac="#A7D8C3" data-w="480" data-h="300"></div>
+<div class="txt"><span class="sector">Finance</span><h3>Supplier invoices that reconcile themselves</h3><div class="res"><span>Terrazzo Energy</span><strong>9 days faster close</strong></div></div></a><a class="card" href="case-studies/orbit-legal.html" data-s="Legal"><div class="art" data-art data-seed="6" data-bg="#33406E" data-fg="#E9ECF7" data-ac="#9DB4F5" data-w="480" data-h="300"></div>
+<div class="txt"><span class="sector">Legal</span><h3>Contract review at scale</h3><div class="res"><span>Orbit Legal</span><strong>5× more contracts reviewed</strong></div></div></a></div>
+</div></section>
+
+<section class="cap" id="capabilities"><div class="wrap split">
+ <div><h2 style="font-size:clamp(2rem,4vw,3.3rem)">Capabilities</h2><p style="color:var(--mute);margin:16px 0 24px;max-width:36ch">Agents are only useful when they are connected, measured and supervised. That is most of the work.</p><a class="btn" href="features.html">Explore features</a></div>
+ <div>
+ <details name="c" open><summary>Agent design</summary><div><p>Single agents and multi-agent teams that plan, use tools and hand off to people. We write the instructions, tool contracts and fallback paths.</p><div class="tags"><span>Planning</span><span>Tool use</span><span>Memory</span><span>Handoffs</span></div></div></details>
+ <details name="c"><summary>Workflow automation</summary><div><p>Triggers, queues and retries around the agents, so a failed step is resumed instead of lost. Works alongside the rules-based automation you already have.</p><div class="tags"><span>Event-driven</span><span>Scheduling</span><span>Retries</span><span>Audit trail</span></div></div></details>
+ <details name="c"><summary>Integrations</summary><div><p>Secure connections to your CRM, ERP, ticketing, email, documents and databases, with least-privilege access for every agent.</p><div class="tags"><span>Salesforce</span><span>SAP</span><span>Zendesk</span><span>Slack</span><span>Custom APIs</span></div></div></details>
+ <details name="c"><summary>Evaluation and guardrails</summary><div><p>Test sets built from your own cases, scored on every change. Spending limits, approval rules and logs show what each agent did and why.</p><div class="tags"><span>Evals</span><span>Approvals</span><span>Red-teaming</span><span>Observability</span></div></div></details>
+ <details name="c"><summary>Run and improve</summary><div><p>We stay on after launch: monitor quality, review edge cases with your team and expand each agent to the next task once it is stable.</p><div class="tags"><span>Monitoring</span><span>Weekly reviews</span><span>Cost tuning</span></div></div></details>
+ </div></div></section>
+
+<section id="process"><div class="wrap">
+ <div class="sh"><h2>How we work</h2><p>A working agent in production within eight to twelve weeks, then steady expansion.</p></div>
+ <div class="steps">
+  <div class="step"><h3>Map</h3><p>We shadow the team, list every step of the process and pick the one where an agent saves the most time.</p></div>
+  <div class="step"><h3>Prototype</h3><p>A first agent runs on your real data in a sandbox and is tested against past cases.</p></div>
+  <div class="step"><h3>Deploy</h3><p>Live with human approval on every action, relaxed only where accuracy has been proven.</p></div>
+  <div class="step"><h3>Operate</h3><p>Monitoring, reviews and new skills added as the agent earns trust.</p></div>
+ </div></div></section>
+
+<section class="cta"><div class="wrap"><div><h2>Have a process that takes up too many hours?</h2><p>Tell us about it. We will tell you honestly whether an agent is the right tool.</p></div><a class="btn" href="contact.html">Book a 30-minute call</a></div></section>
+</main>
+<footer class="site"><div class="wrap"><div class="cols">
+<div><a class="logo" style="color:#fff" href="index.html"><svg viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="7" fill="#2457C5"/><circle cx="8" cy="9" r="2.6" fill="#fff"/><circle cx="20" cy="14" r="2.6" fill="#fff"/><circle cx="8" cy="19" r="2.6" fill="#fff"/><path d="M8 9C14 9 14 14 20 14M8 19C14 19 14 14 20 14" stroke="#fff" stroke-width="1.7" fill="none"/></svg>AgentFlow</a><p>We design, build and run AI agents that take work off operations teams.</p></div>
+<div><h4>Case studies</h4><a href="case-studies/northwind-freight.html">Northwind Freight</a><a href="case-studies/halcyon-health.html">Halcyon Health</a><a href="case-studies/lumen-bank.html">Lumen Bank</a><a href="case-studies/brightcart.html">Brightcart</a></div>
+<div><h4>Company</h4><a href="features.html">Features and tools</a><a href="features.html#security">Security</a><a href="contact.html">Contact</a><a href="mailto:hello@agentflow.ai">hello@agentflow.ai</a></div></div>
+<div class="base"><span>© 2026 AgentFlow. Case studies are illustrative examples.</span><span>Kolkata · London · Remote</span></div></div></footer>
+<script src="assets/js/art.js"></script><script src="assets/js/home.js"></script></body></html>

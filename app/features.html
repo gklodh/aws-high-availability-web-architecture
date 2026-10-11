@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Features and tools | AgentFlow</title><meta name="description" content="AgentFlow designs, builds and runs AI agents and automation for operations teams.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css"></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="wrap">
+<a class="logo" href="index.html"><svg viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="7" fill="#2457C5"/><circle cx="8" cy="9" r="2.6" fill="#fff"/><circle cx="20" cy="14" r="2.6" fill="#fff"/><circle cx="8" cy="19" r="2.6" fill="#fff"/><path d="M8 9C14 9 14 14 20 14M8 19C14 19 14 14 20 14" stroke="#fff" stroke-width="1.7" fill="none"/></svg>AgentFlow</a>
+<nav class="main" aria-label="Main"><a href="index.html#work">Case studies</a><a href="index.html#capabilities">Capabilities</a><a href="features.html" aria-current="page">Features</a><a href="contact.html">Contact</a></nav>
+<a class="btn" href="contact.html">Start a project</a></div></header>
+
+<main id="main">
+<div class="pagehero"><div class="wrap"><h1>Features and tools</h1><p>Estimate what an agent could save, see how we keep agents safe, and get answers to common questions.</p></div></div>
+
+<section id="roi"><div class="wrap">
+ <div class="sh"><h2>Savings estimator</h2><p>Enter figures for one repetitive process. The result is a rough guide, not a quote.</p></div>
+ <div class="calc">
+  <div class="box">
+   <div class="field"><label for="tasks">Tasks per month <output id="tasksV"></output></label><input id="tasks" type="range" min="100" max="50000" step="100" value="4000"></div>
+   <div class="field"><label for="mins">Minutes per task <output id="minsV"></output></label><input id="mins" type="range" min="2" max="90" step="1" value="12"></div>
+   <div class="field"><label for="rate">Fully loaded hourly cost <output id="rateV"></output></label><input id="rate" type="range" min="10" max="150" step="1" value="35"></div>
+   <div class="field"><label for="auto">Share of tasks the agent completes <output id="autoV"></output></label><input id="auto" type="range" min="10" max="95" step="1" value="65"></div>
+   <div class="field" style="margin-bottom:0"><label for="cur">Currency</label><select id="cur"><option value="$">US dollar ($)</option><option value="€">Euro (€)</option><option value="£">Pound (£)</option><option value="₹">Rupee (₹)</option></select></div>
+  </div>
+  <div class="out" aria-live="polite">
+   <div><small>Estimated annual saving</small><div class="big" id="annual"></div></div>
+   <div class="row"><div><b id="hours"></b><small>hours saved each month</small></div><div><b id="monthly"></b><small>saved each month</small></div><div><b id="fte"></b><small>full-time equivalents</small></div></div>
+  </div>
+ </div>
+ <p class="note">Estimates exclude build and running costs, which depend on the process. We provide a full business case during the Map phase.</p>
+</div></section>
+
+<section class="cap" id="security"><div class="wrap">
+ <div class="sh"><h2>Security and governance</h2><p>Every agent we deploy is built to be supervised, limited and auditable.</p></div>
+ <div class="feat">
+  <div class="box"><div class="ic">1</div><h3>Least-privilege access</h3><p>Each agent gets only the systems and actions its task requires, with separate credentials you can revoke.</p></div>
+  <div class="box"><div class="ic">2</div><h3>Human approval rules</h3><p>Set the value, risk or customer type above which an agent must ask a person first.</p></div>
+  <div class="box"><div class="ic">3</div><h3>Full audit trail</h3><p>Every input, tool call and decision is logged with the reasoning, ready for internal or external audit.</p></div>
+  <div class="box"><div class="ic">4</div><h3>Spending and rate limits</h3><p>Caps on refunds, payments and model usage prevent a single bad run from becoming an expensive one.</p></div>
+  <div class="box"><div class="ic">5</div><h3>Continuous evaluation</h3><p>Every change is scored against test cases from your own history before it reaches production.</p></div>
+  <div class="box"><div class="ic">6</div><h3>Data stays in your region</h3><p>Deploy in your cloud account and region, and keep sensitive records out of model training.</p></div>
+ </div>
+</div></section>
+
+<section id="integrations"><div class="wrap">
+ <div class="sh"><h2>Integrations</h2><p>We connect to the systems your team already uses, or build to your API.</p></div>
+ <div class="feat">
+  <div class="box"><h3>CRM and support</h3><p>Salesforce, HubSpot, Zendesk, Freshdesk, Intercom</p></div>
+  <div class="box"><h3>ERP and finance</h3><p>SAP, Oracle, NetSuite, Xero, Stripe</p></div>
+  <div class="box"><h3>Documents and email</h3><p>Microsoft 365, Google Workspace, SharePoint, DocuSign</p></div>
+  <div class="box"><h3>Messaging</h3><p>Slack, Microsoft Teams, WhatsApp Business</p></div>
+  <div class="box"><h3>Data</h3><p>PostgreSQL, Snowflake, BigQuery, S3, REST and GraphQL</p></div>
+  <div class="box"><h3>Healthcare and legal</h3><p>FHIR and HL7, Epic, iManage, NetDocuments</p></div>
+ </div>
+</div></section>
+
+<section class="cap" id="faq"><div class="wrap"><div class="split cap" style="display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;border:0;background:none">
+ <div><h2 style="font-size:clamp(2rem,4vw,3.3rem)">Questions</h2></div>
+ <div>
+ <details name="f" open><summary>What is an AI agent?</summary><p>Software that takes a goal, decides the steps, uses your systems to carry them out and checks its own work. Unlike a fixed script, it can handle variation, and we limit what it is allowed to do.</p></details>
+ <details name="f"><summary>How long does a first project take?</summary><p>Most first agents reach production in eight to twelve weeks, starting with human approval on every action.</p></details>
+ <details name="f"><summary>Will agents replace my team?</summary><p>In our projects, agents take over the repetitive steps and people move to exceptions, judgement calls and customer conversations. Approval stays with your team.</p></details>
+ <details name="f"><summary>What if an agent makes a mistake?</summary><p>Limits and approval rules contain the impact, the audit trail shows what happened, and the evaluation suite is updated so the same mistake is caught next time.</p></details>
+ <details name="f"><summary>Do you work with our existing tools?</summary><p>Yes. We connect to your current systems and add agents alongside them rather than asking you to replace anything.</p></details>
+ </div></div></div></section>
+</main>
+<footer class="site"><div class="wrap"><div class="cols">
+<div><a class="logo" style="color:#fff" href="index.html"><svg viewBox="0 0 28 28" aria-hidden="true"><rect width="28" height="28" rx="7" fill="#2457C5"/><circle cx="8" cy="9" r="2.6" fill="#fff"/><circle cx="20" cy="14" r="2.6" fill="#fff"/><circle cx="8" cy="19" r="2.6" fill="#fff"/><path d="M8 9C14 9 14 14 20 14M8 19C14 19 14 14 20 14" stroke="#fff" stroke-width="1.7" fill="none"/></svg>AgentFlow</a><p>We design, build and run AI agents that take work off operations teams.</p></div>
+<div><h4>Case studies</h4><a href="case-studies/northwind-freight.html">Northwind Freight</a><a href="case-studies/halcyon-health.html">Halcyon Health</a><a href="case-studies/lumen-bank.html">Lumen Bank</a><a href="case-studies/brightcart.html">Brightcart</a></div>
+<div><h4>Company</h4><a href="features.html">Features and tools</a><a href="features.html#security">Security</a><a href="contact.html">Contact</a><a href="mailto:hello@agentflow.ai">hello@agentflow.ai</a></div></div>
+<div class="base"><span>© 2026 AgentFlow. Case studies are illustrative examples.</span><span>Kolkata · London · Remote</span></div></div></footer>
+<script src="assets/js/features.js"></script></body></html>
