@@ -1,0 +1,9 @@
+# Never commit keys or credentials
+*.pem
+*.ppk
+.env
+.aws/
+
+# OS files
+.DS_Store
+Thumbs.db
